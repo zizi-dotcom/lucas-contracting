@@ -6,9 +6,9 @@ body {
   color: #333;
 }
 
-/* NOWY styl headera: ciemny, sticky, z box-shadow i ładnym hover na linkach */
+/* Header */
 header {
-  background-color: #121212; /* bardzo ciemny grafit */
+  background-color: #121212;
   color: white;
   padding: 1rem 2rem;
   display: flex;
@@ -35,13 +35,88 @@ nav a {
 }
 
 nav a:hover {
-  color: #f39c12; /* ciepły pomarańczowy na hover */
+  color: #f39c12;
 }
 
-main {
-  padding: 2em;
+/* Hero section */
+.hero {
+  height: 60vh;
+  background-image: url('images/project1.jpeg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
 }
 
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  padding: 0 1em;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.btn {
+  background-color: #f39c12;
+  color: white;
+  padding: 0.75em 1.5em;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #d88e0a;
+}
+
+/* Welcome section */
+.welcome {
+  max-width: 800px;
+  margin: 3em auto;
+  padding: 2em 2.5em;
+  background-color: #f9f9f9;
+  border-left: 6px solid #2c3e50;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+}
+
+.welcome h2 {
+  font-size: 2.2em;
+  margin-bottom: 1em;
+  font-weight: 700;
+}
+
+.welcome p {
+  line-height: 1.7;
+  font-size: 1.15em;
+  margin-bottom: 1.2em;
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 1em;
@@ -49,32 +124,11 @@ footer {
   margin-top: 2em;
 }
 
-.gallery .images {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1em;
-}
-
-.gallery .images img {
-  width: 100%;
-  max-width: 300px;
-  border-radius: 8px;
-}
-
+/* Responsive */
 @media (max-width: 600px) {
   nav {
     display: flex;
     flex-direction: column;
-    align-items: center; /* dodane, żeby ładnie wyśrodkować na małych ekranach */
-  }
-
-  .gallery .images {
-    flex-direction: column;
     align-items: center;
   }
 }
-
-/* Styl dla sekcji powitalnej na stronie głównej */
-.welcome {
-  max-width: 800px;
-  margin
