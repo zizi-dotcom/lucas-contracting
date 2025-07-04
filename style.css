@@ -1,4 +1,3 @@
-
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,17 +6,36 @@ body {
   color: #333;
 }
 
+/* NOWY styl headera: ciemny, sticky, z box-shadow i ładnym hover na linkach */
 header {
-  background-color: #2c3e50;
+  background-color: #121212; /* bardzo ciemny grafit */
   color: white;
-  padding: 1em;
-  text-align: center;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.7);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 1.8rem;
 }
 
 nav a {
   margin: 0 1em;
-  color: white;
+  color: #eeeeee;
   text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f39c12; /* ciepły pomarańczowy na hover */
 }
 
 main {
@@ -47,6 +65,7 @@ footer {
   nav {
     display: flex;
     flex-direction: column;
+    align-items: center; /* dodane, żeby ładnie wyśrodkować na małych ekranach */
   }
 
   .gallery .images {
@@ -58,24 +77,4 @@ footer {
 /* Styl dla sekcji powitalnej na stronie głównej */
 .welcome {
   max-width: 800px;
-  margin: 3em auto;
-  padding: 2em 2.5em;
-  background-color: #f9f9f9;
-  border-left: 6px solid #2c3e50;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #2c3e50;
-}
-
-.welcome h2 {
-  font-size: 2.2em;
-  margin-bottom: 1em;
-  font-weight: 700;
-}
-
-.welcome p {
-  line-height: 1.7;
-  font-size: 1.15em;
-  margin-bottom: 1.2em;
-}
+  margin
