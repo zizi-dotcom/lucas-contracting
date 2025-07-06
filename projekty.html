@@ -24,117 +24,38 @@
         <h3>Project 1</h3>
         <div class="images">
           <div class="image-item">
-            <img src="images/project1.jpeg" alt="Project 1A" />
+            <a href="images/project1.jpeg" target="_blank">
+              <img src="images/project1.jpeg" alt="Project 1A" />
+            </a>
             <p>Example of description</p>
           </div>
           <div class="image-item">
-            <img src="images/project2.jpeg" alt="Project 1B" />
+            <a href="images/project2.jpeg" target="_blank">
+              <img src="images/project2.jpeg" alt="Project 1B" />
+            </a>
             <p>Example of description</p>
           </div>
           <div class="image-item">
-            <img src="images/project3.jpeg" alt="Project 1C" />
+            <a href="images/project3.jpeg" target="_blank">
+              <img src="images/project3.jpeg" alt="Project 1C" />
+            </a>
             <p>Example of description</p>
           </div>
           <div class="image-item">
-            <img src="images/project4.jpeg" alt="Project 1D" />
+            <a href="images/project4.jpeg" target="_blank">
+              <img src="images/project4.jpeg" alt="Project 1D" />
+            </a>
             <p>Example of description</p>
           </div>
         </div>
       </div>
 
-      <div class="project">
-        <h3>Project 2</h3>
-        <div class="images">
-          <div class="image-item">
-            <img src="images/project5.jpeg" alt="Project 2A" />
-            <p>Example of description</p>
-          </div>
-          <div class="image-item">
-            <img src="images/project6.jpeg" alt="Project 2B" />
-            <p>Example of description</p>
-          </div>
-          <div class="image-item">
-            <img src="images/project7.jpeg" alt="Project 2C" />
-            <p>Example of description</p>
-          </div>
-          <div class="image-item">
-            <img src="images/project8.jpeg" alt="Project 2D" />
-            <p>Example of description</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="project">
-        <h3>Project 3</h3>
-        <div class="images">
-          <div class="image-item">
-            <img src="images/project9.jpeg" alt="Project 3A" />
-            <p>Example of description</p>
-          </div>
-          <div class="image-item">
-            <img src="images/project10.jpeg" alt="Project 3B" />
-            <p>Example of description</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="project">
-        <h3>Project 4</h3>
-        <div class="images">
-          <div class="image-item">
-            <img src="images/project11.jpeg" alt="Project 4A" />
-            <p>Example of description</p>
-          </div>
-          <div class="image-item">
-            <img src="images/project12.jpeg" alt="Project 4B" />
-            <p>Example of description</p>
-          </div>
-          <div class="image-item">
-            <img src="images/project13.jpeg" alt="Project 4C" />
-            <p>Example of description</p>
-          </div>
-          <div class="image-item">
-            <img src="images/project14.jpeg" alt="Project 4D" />
-            <p>Example of description</p>
-          </div>
-        </div>
-      </div>
+      <!-- Dodaj inne projekty analogicznie jak wyżej -->
     </section>
   </main>
 
   <footer>
     &copy; 2025 Lucas Contracting
   </footer>
-
-  <!-- Lightbox modal -->
-  <div id="lightbox" class="lightbox">
-    <span class="close">&times;</span>
-    <img class="lightbox-content" id="lightbox-img" src="" alt="Zoomed image">
-  </div>
-
-  <script>
-    const images = document.querySelectorAll('.image-item img');
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    const closeBtn = document.querySelector('.close');
-
-    images.forEach(img => {
-      img.addEventListener('click', () => {
-        lightbox.style.display = 'flex';
-        lightboxImg.src = img.src;
-        lightboxImg.alt = img.alt;
-      });
-    });
-
-    closeBtn.addEventListener('click', () => {
-      lightbox.style.display = 'none';
-    });
-
-    lightbox.addEventListener('click', (e) => {
-      if (e.target === lightbox) {
-        lightbox.style.display = 'none';
-      }
-    });
-  </script>
 </body>
 </html>
