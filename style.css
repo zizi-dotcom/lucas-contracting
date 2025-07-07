@@ -184,3 +184,17 @@ footer {
     align-items: center;
   }
 }
+
+.map {
+  margin: 3em auto;
+  max-width: 800px;
+  padding: 0 1em;
+  text-align: center;
+}
+
+.map-container {
+  margin-top: 1em;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
