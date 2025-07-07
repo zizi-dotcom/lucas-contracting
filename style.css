@@ -41,8 +41,8 @@ nav a:hover {
 /* Hero section - zwiększona wysokość i lepsze skalowanie tła */
 .hero {
   height: 80vh; /* zwiększone z 60vh na 80vh */
-  background-image: url('images/project1.jpeg');
-  background-size: contain; /* zmienione z cover na contain, żeby w całości było widoczne */
+  background-image: url('images/project11.jpeg');
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
